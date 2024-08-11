@@ -11,6 +11,7 @@ function SelectDocument() {
   const { documents, loading, error } = useSelector((state) => state.documents);
 
   useEffect(() => {
+
     const fetchUserIdAndDocuments = async () => {
       try {
         const token = localStorage.getItem('token');
